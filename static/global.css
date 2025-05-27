@@ -1,0 +1,17 @@
+:root {
+    --color-primary-teal: #2E9C9D;
+    --color-primary-red: #D92127;
+    --color-complementary-white: #FFFFFF;
+    --color-complementary-light-blue: #CDEEEE;
+    --color-complementary-medium-teal: #66BBBA;
+    --color-complementary-light-red: #ED8380;
+    --color-error: var(--color-primary-red);
+}
+
+/* Opcional: Estilos base globales si los necesitas */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: var(--color-complementary-light-blue); /* Usando una variable */
+    color: #333;
+}

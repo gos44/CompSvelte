@@ -2,7 +2,7 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
   import type { NavbarConfig, NavItem, NavbarAction } from '$lib/types/navbar.types';
-  import { goto } from '$app/navigation'; // solo si usas SvelteKit
+  import { goto } from '$app/navigation';
 
   export let config: NavbarConfig;
   export let currentPath: string = '';
@@ -93,8 +93,8 @@
     {#if config.brand}
       <div class="navbar__brand">
         {#if config.brand.href}
-          <a 
-            href={config.brand.href} 
+          <a
+            href={config.brand.href}
             class="navbar__brand-link"
             onclick={handleBrandClick}
           >
@@ -202,7 +202,6 @@
         {/each}
       </ul>
     </div>
-
     <!-- Actions -->
     {#if config.actions && config.actions.length > 0}
       <div class="navbar__actions">

@@ -2,6 +2,7 @@
 import { page } from '$app/stores';
 import Navbar from '$lib/components/GenericNavbar.svelte';
 import type { NavbarConfig } from '$lib/types/navbar.types';
+import '../../static/global.css';
 
 const navConfig: NavbarConfig = {
   brand: {
@@ -11,7 +12,8 @@ const navConfig: NavbarConfig = {
   },
   items: [
     { id: 'home', label: 'Inicio', href: '/' },
-	{ id: 'Crud', label: 'Crud', href: '/Crud' },
+	  { id: 'Crud', label: 'Crud', href: '/Crud' },
+    { id: 'Componentes', label: 'Componentes', href: '/Componentes' },
     {
       id: 'products',
       label: 'Productos',
@@ -23,8 +25,22 @@ const navConfig: NavbarConfig = {
     { id: 'about', label: 'Acerca de', href: '/about' }
   ],
   actions: [
-    { id: 'login', type: 'button',href: '/Login', label: 'Iniciar Sesión', variant: 'outline' },
-    { id: 'Registrarse', type: 'button',href: '/Registrarse', label: 'Registrarse', variant: 'primary' }
+    // OPCIÓN 1: Como enlaces (recomendado para navegación)
+    { 
+      id: 'login', 
+      type: 'link', 
+      href: '/Login', 
+      label: 'Iniciar Sesión', 
+      variant: 'outline' 
+    },
+    { 
+      id: 'register', 
+      type: 'link', 
+      href: '/Registrarse', 
+      label: 'Registrarse', 
+      variant: 'primary' 
+    }
+
   ],
   style: 'default',
   position: 'sticky'

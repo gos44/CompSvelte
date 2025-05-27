@@ -274,8 +274,6 @@ novalidate
 </div>
 </form>
 
-
-
 <style lang="scss">
 /* Definición de variables CSS para los colores */
 :root {

@@ -1,13 +1,6 @@
 <script lang="ts">
-
-
-
   import Card from '$lib/components/Card.svelte';
-
-
 </script>
-
-
 
 <h1>Ejemplos de Tarjetas Genéricas</h1>
 
@@ -34,6 +27,7 @@
   </Card>
 </div>
 
+
 <style>
   .card-container {
     display: flex;
@@ -41,20 +35,5 @@
     justify-content: center;
     gap: 1rem;
     padding: 2rem;
-  }
-
-  /* Estilo adicional para la "Tarjeta Especial" */
-  .special-card {
-    background-color: #e0f2f1; /* Un color de fondo diferente */
-    border-color: #4db6ac; /* Un borde diferente */
-    box-shadow: 0 6px 16px rgba(0, 150, 136, 0.2); /* Una sombra más pronunciada */
-  }
-
-  .special-card .card-title {
-    color: #00796b; /* Color de título más oscuro */
-  }
-
-  .special-card .card-subtitle {
-    color: #26a69a;
   }
 </style>
