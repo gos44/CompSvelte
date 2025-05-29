@@ -10,3 +10,14 @@ export interface Product {
   isFavorite?: boolean;
   originalPrice?: number;
 }
+export interface ProductFilters {
+  searchTerm: string;
+  selectedCategory: string;
+  sortBy: string;
+}
+
+export interface PaginationConfig {
+  currentPage: number;
+  itemsPerPage: number;
+  totalItems: number;
+}

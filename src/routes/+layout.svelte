@@ -3,6 +3,7 @@ import { page } from '$app/stores';
 import Navbar from '$lib/components/GenericNavbar.svelte';
 import type { NavbarConfig } from '$lib/types/navbar.types';
 import '../../static/global.css';
+import Footer from '$lib/components/Footer.svelte';
 
 const navConfig: NavbarConfig = {
   brand: {
@@ -13,6 +14,7 @@ const navConfig: NavbarConfig = {
   items: [
     { id: 'home', label: 'Inicio', href: '/' },
 	  { id: 'Crud', label: 'Crud', href: '/Crud' },
+    { id: 'Modal', label: 'Modal', href: '/Modal' },
     { id: 'Componentes', label: 'Componentes', href: '/Componentes' },
     {
       id: 'products',
@@ -26,10 +28,10 @@ const navConfig: NavbarConfig = {
   ],
   actions: [
     // OPCIÓN 1: Como enlaces (recomendado para navegación)
-    { 
-      id: 'login', 
-      type: 'link', 
-      href: '/Login', 
+    {
+      id: 'login',
+      type: 'link',
+      href: '/Login',
       label: 'Iniciar Sesión', 
       variant: 'outline' 
     },
@@ -66,3 +68,5 @@ $: currentPath = $page.url.pathname;
 />
 
 <slot />
+
+<Footer />

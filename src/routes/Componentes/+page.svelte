@@ -1,6 +1,10 @@
 <script lang="ts">
   // Componente de Botones
+    import Modal from '$lib/components/Modal.svelte';
+
   import BotonGenerico from '$lib/components/BotonGenerico.svelte';
+
+  let showModal = false;
 
   function handleClick() {
     alert('¡Botón presionado!');
@@ -45,6 +49,8 @@
   <BotonGenerico label="Eliminar" variant="danger" disabled />
   <BotonGenerico label="Ver más" variant="outline" />
 </div>
+
+
 
 <style>
   .card-container {
