@@ -13,7 +13,7 @@ const navConfig: NavbarConfig = {
   },
   items: [
     { id: 'home', label: 'Inicio', href: '/' },
-	  { id: 'Crud', label: 'Crud', href: '/Crud' },
+	  { id: 'profile', label: 'profile', href: '/profile' },
     { id: 'Modal', label: 'Modal', href: '/Modal' },
     { id: 'Componentes', label: 'Componentes', href: '/Componentes' },
     {
@@ -27,7 +27,6 @@ const navConfig: NavbarConfig = {
     { id: 'about', label: 'Acerca de', href: '/about' }
   ],
   actions: [
-    // OPCIÓN 1: Como enlaces (recomendado para navegación)
     {
       id: 'login',
       type: 'link',
